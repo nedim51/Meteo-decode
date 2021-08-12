@@ -15,6 +15,13 @@ namespace Meteo_decode
         public fPrognose()
         {
             InitializeComponent();
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fMeteoDecode.ActiveForm.Activate();
             fMeteoDecode.ActiveForm.Text = "asdasdasdasdasdasd";
         }
     }
