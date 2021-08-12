@@ -29,7 +29,6 @@ namespace Meteo_decode
             }
             else
             {
-                vCount++;
             }
 
             string sTmp = "Выполняется" + new string('.', vCount);
