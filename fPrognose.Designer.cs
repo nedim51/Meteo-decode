@@ -34,9 +34,9 @@ namespace Meteo_decode
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(437, 75);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(408, 75);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,7 +46,7 @@ namespace Meteo_decode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(433, 96);
             this.Controls.Add(this.button1);
             this.Name = "fPrognose";
             this.Text = "fPrognose";
