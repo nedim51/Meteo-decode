@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Meteo_decode.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Декодер_Метео_Файлов;
@@ -17,6 +19,8 @@ namespace Meteo_decode
          * Глобальные переменные
          */
         int vCount = 1; // Счетчик таймера
+
+        public object VariableTemplates { get; private set; }
 
         public fMeteoDecode()
         {
@@ -130,7 +134,14 @@ namespace Meteo_decode
         private void bPrognose_Click(object sender, EventArgs e)
         {
             fPrognose Prognose = new fPrognose();
-            Prognose.Show();
+            Prognose.Show();        
+
+            string jsonString = JsonSerializer.Serialize(VeriablesTemplate.a);
+
+            Console.WriteLine(jsonString);
+
+
+            //MessageBox.Show(VeriablesTemplate.a.);
         }
     }
 }
